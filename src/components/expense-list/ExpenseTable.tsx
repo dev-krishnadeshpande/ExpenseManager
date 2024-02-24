@@ -1,3 +1,4 @@
+import { FC } from "react";
 import {
   DetailsList,
   DetailsListLayoutMode,
@@ -67,7 +68,7 @@ const columns: IColumn[] = [
       <DefaultButton
         text="Delete"
         allowDisabledFocus
-        style={{ backgroundColor: "red", color: "white" }}
+        style={{ backgroundColor: "#000000", color: "white" }}
       />
     ),
   },
@@ -75,9 +76,11 @@ const columns: IColumn[] = [
 
 interface ExpenseTableProps {
   expenses: Expense[];
+  errorMsg?: string;
+  isLoading?: boolean;
 }
 
-const ExpenseTable = ({ expenses }: ExpenseTableProps) => {
+const ExpenseTable: FC<ExpenseTableProps> = ({ expenses }) => {
   return (
     <div style={{ width: "55vw" }}>
       <DetailsList
@@ -89,7 +92,7 @@ const ExpenseTable = ({ expenses }: ExpenseTableProps) => {
           root: {
             selectors: {
               ".ms-DetailsRow": { background: "lightblue" },
-              ".ms-DetailsRow:hover": { background: "lightpink" },
+              ".ms-DetailsRow:hover": { background: "lightgrey" },
             },
           },
         }}
