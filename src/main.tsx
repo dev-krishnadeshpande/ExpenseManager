@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AddExpense from "./components/add-expense/AddExpense";
 import SearchExpense from "./components/search-expense/SearchExpense";
 import Profile from "./components/Profile/Profile";
+import ExpenseList from "./components/expense-list/ExpenseList.tsx";
 
 import App from "./App.tsx";
 import "./index.css";
@@ -13,6 +14,10 @@ export const router = createBrowserRouter([
     path: "/",
     element: <App />,
     children: [
+      {
+        path: "/",
+        element: <ExpenseList />,
+      },
       {
         path: "add",
         element: <AddExpense />,

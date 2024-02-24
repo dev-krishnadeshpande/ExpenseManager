@@ -1,10 +1,10 @@
-import ExpenseTable from "../expense-list/ExpenseTable";
+import ExpenseTable from "./ExpenseTable";
 import { useExpenses } from "../../custom-hooks/useExpenses";
 
-const SearchExpense = () => {
+const ExpenseList = () => {
   const expenses = useExpenses();
 
   return <ExpenseTable expenses={expenses} />;
 };
 
-export default SearchExpense;
+export default ExpenseList;
