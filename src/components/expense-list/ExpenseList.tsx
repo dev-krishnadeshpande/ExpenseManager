@@ -1,4 +1,4 @@
-import ExpenseTable from "./ExpenseTable";
+import ExpenseTable from "../ui/common/ExpenseTable";
 import { useExpenses } from "../../custom-hooks/useExpenses";
 
 const ExpenseList = () => {
@@ -9,11 +9,21 @@ const ExpenseList = () => {
   if (errorMsg) return <p className="error-msg">{errorMsg}</p>;
 
   return (
-    <ExpenseTable
-      expenses={expenses}
-      errorMsg={errorMsg}
-      isLoading={isLoading}
-    />
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        gap: "20px",
+      }}
+    >
+      <h2>Expense Table</h2>
+      <ExpenseTable
+        expenses={expenses}
+        errorMsg={errorMsg}
+        isLoading={isLoading}
+      />
+    </div>
   );
 };
 

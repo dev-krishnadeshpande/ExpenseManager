@@ -1,46 +1,88 @@
 {
   "expenses": [
     {
-      "expense_type": "card",
-      "expense_amount": "4500",
+      "expenseType": "card",
+      "expenseAmount": "4500",
       "description": "Shoes",
-      "expense_date": "2023-10-05",
-      "id": 2
+      "expenseDate": "2023-10-05",
+      "id": "2"
     },
     {
-      "expense_type": "cash",
-      "expense_amount": "5000",
+      "expenseType": "cash",
+      "expenseAmount": "5000",
       "description": "Shopping",
-      "expense_date": "2023-11-06",
-      "id": 3
+      "expenseDate": "2023-11-06",
+      "id": "3"
     },
     {
-      "expense_type": "cash",
-      "expense_amount": "1000",
+      "expenseType": "cash",
+      "expenseAmount": "1000",
       "description": "Grocery",
-      "expense_date": "2023-10-18",
-      "id": 5
+      "expenseDate": "2023-10-18",
+      "id": "5"
     },
     {
-      "expense_type": "cash",
-      "expense_amount": "300",
+      "expenseType": "cash",
+      "expenseAmount": "300",
       "description": "Flight Travel",
-      "expense_date": "2023-06-13",
-      "id": 6
+      "expenseDate": "2023-06-13",
+      "id": "6"
     },
     {
-      "expense_type": "card",
-      "expense_amount": "450",
+      "expenseType": "card",
+      "expenseAmount": "450",
       "description": "Shopping",
-      "expense_date": "2023-11-07",
-      "id": 7
+      "expenseDate": "2023-11-07",
+      "id": "7"
     },
     {
-      "expense_type": "cash",
-      "expense_amount": "4000",
+      "expenseType": "cash",
+      "expenseAmount": "4000",
       "description": "Personal Expense",
-      "expense_date": "2022-07-13",
-      "id": 8
+      "expenseDate": "2022-07-13",
+      "id": "8"
+    },
+    {
+      "id": "d85c",
+      "expenseDate": "01/02/2024",
+      "expenseAmount": "1000",
+      "description": "ekhafhkjE",
+      "expenseType": "Card"
+    },
+    {
+      "id": "1477",
+      "expenseDate": "01/02/2024",
+      "expenseAmount": "1000",
+      "description": "AKFnlkn;o/f;OELG/L.",
+      "expenseType": "Card"
+    },
+    {
+      "id": "1621",
+      "expenseDate": "01/02/2024",
+      "expenseAmount": "1000",
+      "description": "ffn.kllkrKL",
+      "expenseType": "Card"
+    },
+    {
+      "id": "ffef",
+      "expenseDate": "01/02/2024",
+      "expenseAmount": "1000",
+      "description": "weBGEA",
+      "expenseType": "Cash"
+    },
+    {
+      "id": "f276",
+      "expenseDate": "01/02/2024",
+      "expenseAmount": "1000",
+      "description": "WAfgeg",
+      "expenseType": "Cash"
+    },
+    {
+      "id": "e8eb",
+      "expenseDate": "01/02/2024",
+      "expenseAmount": "1000",
+      "description": "anfafKlnklE",
+      "expenseType": "Cash"
     }
   ],
   "profile": {
@@ -52,7 +94,7 @@
     {
       "email": "mike@example.com",
       "password": "mike@123",
-      "id": 1
+      "id": "1"
     }
   ]
 }

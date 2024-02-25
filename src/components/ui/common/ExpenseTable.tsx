@@ -7,21 +7,21 @@ import {
 } from "@fluentui/react";
 import { DefaultButton } from "@fluentui/react/lib/Button";
 
-import { ExpenseProps } from "../../interfaces/IExpense";
+import { ExpenseProps } from "../../../interfaces/IExpense";
 
 const columns: IColumn[] = [
   {
-    key: "expense_type",
+    key: "expenseType",
     name: "Expense Type",
-    fieldName: "expense_type",
+    fieldName: "expenseType",
     minWidth: 60,
     maxWidth: 120,
     isResizable: true,
   },
   {
-    key: "expense_amount",
+    key: "expenseAmount",
     name: "Expense Amount",
-    fieldName: "expense_amount",
+    fieldName: "expenseAmount",
     minWidth: 60,
     maxWidth: 120,
     isResizable: true,
@@ -35,9 +35,9 @@ const columns: IColumn[] = [
     isResizable: true,
   },
   {
-    key: "expense_date",
+    key: "expenseDate",
     name: "Expense Date",
-    fieldName: "expense_date",
+    fieldName: "expenseDate",
     minWidth: 60,
     maxWidth: 120,
     isResizable: true,
