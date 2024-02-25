@@ -6,13 +6,7 @@ import {
 } from "@fluentui/react";
 
 import { useForm, SubmitHandler } from "react-hook-form";
-
-interface AddExpenseForm {
-  expenseType?: string;
-  expenseDate: string;
-  expenseAmount: string;
-  description: string;
-}
+import { Expense } from "../../interfaces/IExpense";
 
 const AddExpense = () => {
   const {
@@ -21,9 +15,9 @@ const AddExpense = () => {
     setValue,
     reset,
     formState: { errors },
-  } = useForm<AddExpenseForm>();
+  } = useForm<Expense>();
 
-  const onSubmit: SubmitHandler<AddExpenseForm> = (data) => {
+  const onSubmit: SubmitHandler<Expense> = (data) => {
     console.log(data);
     reset();
   };

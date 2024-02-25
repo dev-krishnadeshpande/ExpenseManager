@@ -1,6 +1,13 @@
 export interface Expense {
-  expense_type: string;
-  expense_amount: string;
+  id?: string;
+  expenseType: string;
+  expenseAmount: string;
   description: string;
-  expense_date: string;
+  expenseDate: string;
+}
+
+export interface ExpenseProps {
+  expenses: Expense[];
+  isLoading: boolean;
+  errorMsg: string;
 }

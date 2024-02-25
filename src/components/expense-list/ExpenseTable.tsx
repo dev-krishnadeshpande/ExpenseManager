@@ -7,7 +7,7 @@ import {
 } from "@fluentui/react";
 import { DefaultButton } from "@fluentui/react/lib/Button";
 
-import { Expense } from "../../interfaces/IExpense";
+import { ExpenseProps } from "../../interfaces/IExpense";
 
 const columns: IColumn[] = [
   {
@@ -74,13 +74,7 @@ const columns: IColumn[] = [
   },
 ];
 
-interface ExpenseTableProps {
-  expenses: Expense[];
-  errorMsg?: string;
-  isLoading?: boolean;
-}
-
-const ExpenseTable: FC<ExpenseTableProps> = ({ expenses }) => {
+const ExpenseTable: FC<ExpenseProps> = ({ expenses }) => {
   return (
     <div style={{ width: "55vw" }}>
       <DetailsList
